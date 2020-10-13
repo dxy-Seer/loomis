@@ -2,15 +2,7 @@ const express = require("express");
 const router = express.Router();
 const discordBot = require("./bot");
 const Config = require('./config.json');
-const url = require("url");
-const ejs = require("ejs");
-const path = require("path");
-const passport = require("passport");
-const session = require("express-session");
-const bodyParser = require("body-parser");
 const Discord = require("discord.js");
-const Strategy = require("passport-discord").Strategy;
-const MemoryStore = require("memorystore")(session);
 
 router.get("/api/domain", function(request, response) {
     let domain = Config.siteUrl;
@@ -29,6 +21,9 @@ router.get("/api/server", function(request, response){
 router.get("/s/join", function(request, response){
     let serverInv = Config.server.invite;
     response.redirect('https://discord.gg/invite/' + serverInv)
+});
+router.get("/api/git", function(request, response){
+  response.redirect('https://github.com/dxy-Seer/dbot-template/');
 });
 router.get("/api/bot", async function(request, response) {
     let authURL;
