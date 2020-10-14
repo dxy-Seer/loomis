@@ -12,8 +12,10 @@ Then fill in these values:
 		"commandLogging": true,
 		"messageLogging": true,
 		"status": {
-			"mode": "dnd"
-		}
+			"mode": "dnd",
+            "activity": "dbt.help"
+		},
+		"ver": "0.0.0"
 	},
 	"server": {
 		"invite": "TJY6Xyg"
@@ -22,7 +24,9 @@ Then fill in these values:
 	  "port": "3000",
 	  "db": {
 		  "mongodb": "MONGODB"
-	  }
+	  },
+	  "siteName": "DBOS",
+      "owner": "Seer#6054"
 }
 ```
 ### Console explainations:
