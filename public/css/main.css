@@ -254,3 +254,46 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+
+.title img.wzc{
+    background-color: var(--primary);
+    -webkit-box-shadow: inset 0px 0px 6px -1px var(--primary);
+    -moz-box-shadow: inset 0px 0px 6px -1px var(--primary);
+    -o-box-shadow: inset 0px 0px 6px -1px var(--primary);
+    box-shadow: inset 0px 0px 6px -1px var(--primary);
+    opacity: 1;
+    -webkit-animation: header_NotificationCircle_ANIM_wzc 1.0s infinite ease-in-out;
+    -moz-animation: header_NotificationCircle_ANIM_wzc 1.0s infinite ease-in-out;
+    -o-animation: header_NotificationCircle_ANIM_wzc 1.0s infinite ease-in-out;
+    animation: header_NotificationCircle_ANIM_wzc 1.0s infinite ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+@-webkit-keyframes header_NotificationCircle_ANIM_wzc {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 var(--primary);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }
+  @keyframes header_NotificationCircle_ANIM_wzc {
+    0% {
+      -moz-box-shadow: 0 0 0 0 var(--primary);
+      box-shadow: 0 0 0 0 var(--primary);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+        box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0);
+    }
+  }

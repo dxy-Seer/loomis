@@ -17,7 +17,12 @@ router.get("/invite", function(request, response) {
   });
 });
 router.get("/easter", function(request, response){
-  response.render(__dirname + "/views/eastereggc", {
+  response.render(__dirname + "/views/easteregg.ejs", {
+    SiteName: Config.siteName
+  });
+});
+router.get("/wzc/team", function(request, response){
+  response.render(__dirname + "/views/wzc/team.ejs", {
     SiteName: Config.siteName
   });
 });
