@@ -12,10 +12,10 @@ module.exports.run = async (bot, message, args) => {
     }
     if(req.prefix == 'null'){
         const doc = await GuildModel.findOneAndUpdate({ id: message.guild.id}, { $set: { prefix: args[0] }}, { new: true })
-        message.reply(`Set the prefix to: \`${doc.prefix}\`.`)
+        message.reply(`Set the prefix to: \`${doc.prefix}\``)
     } else {
         const doc = await GuildModel.findOneAndUpdate({ id: message.guild.id}, { $set: { prefix: args[0] }}, { new: true });
-            message.reply(`Set the prefix to: \`${doc.prefix}\`.`)
+            message.reply(`Set the prefix to: \`${doc.prefix}\``)
     } 
 }
 
