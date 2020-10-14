@@ -27,4 +27,4 @@ Then fill in these values:
 ```
 ### Console explainations:
 ML -> Message Log - Enabled with `"messageLogging": true`
-CL -> Command Log - Enabled with `"commandLogging": true`
+CL -> Command Log - Enabled with `"commandLogging": true`"# dbos" 
