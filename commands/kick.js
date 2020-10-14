@@ -1,9 +1,10 @@
 const Discord = require("discord.js");
+const config = require('../config.json');
 module.exports.run = async (bot, message, args) => {
 
  
          if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send('You do not have permission to use this command!')
-         if(!message.guild.me.hasPermission("KICK_MEMBERS")) return message.channel.send('Something went wrong! Atlas doesn\'t have the right permissions to execute this command!')
+         if(!message.guild.me.hasPermission("KICK_MEMBERS")) return message.channel.send(`Something went wrong! ${config.siteName} doesn't have the right permissions to execute this command!`)
 
          const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
 
