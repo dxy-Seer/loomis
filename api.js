@@ -23,7 +23,7 @@ router.get("/s/join", function(request, response){
     response.redirect('https://discord.gg/invite/' + serverInv)
 });
 router.get("/api/git", function(request, response){
-  response.redirect('https://github.com/dxy-Seer/dbos/');
+  response.redirect('https://github.com/wezacon/dbos/');
 });
 router.get("/api/bot", async function(request, response) {
     let authURL;
@@ -66,7 +66,7 @@ router.get("/api/b/version", async function(request, response) {
 router.get('/api/all/info', async function(req, res){
  
   let domain = Config.siteUrl;
-  let uptime = process.uptime();
+  let uptimems = process.uptime();
   let ID = Config.bot.id;
   let ownerName = Config.owner;
   let port = Config.port;
@@ -74,7 +74,6 @@ router.get('/api/all/info', async function(req, res){
 
   res.render(__dirname + "/views/api/info.ejs", {
     SiteName: Config.siteName,
-    uptime: uptime,
     invite: authURL,
     domain: domain,
     port: port,

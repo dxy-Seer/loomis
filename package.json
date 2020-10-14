@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dxy-Seer/dbot-template.git"
+    "url": "git+https://github.com/wezacon/dbos.git"
   },
   "keywords": [
     "discord",
@@ -47,10 +47,10 @@
     "website",
     "node.js"
   ],
-  "author": "Seer#6054",
+  "author": "Team Wezacon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dxy-Seer/dbot-template/issues"
+    "url": "https://github.com/wezacon/dbos/issues"
   },
-  "homepage": "https://github.com/dxy-Seer/dbot-template#readme"
+  "homepage": "https://github.com/wezacon/dbos#readme"
 }
