@@ -1,7 +1,7 @@
 {
-  "name": "dbot-template-main",
-  "version": "0.0.2",
-  "description": "A simple discord bot + website!",
+  "name": "dbos",
+  "version": "0.0.3",
+  "description": "The powerful open source discord bot!",
   "main": "server.js",
   "engines": {
     "node": "12.x"
