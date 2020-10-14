@@ -218,34 +218,38 @@ a {
 .roundedButton.accentColor1 {
     border-color: var(--accent);
     background-color: var(--accent);
-    color: var(--color);
+    color: var(--font);
 }
 .roundedButton.accentColor1:hover {
     background-color: #3d8adb;
-    color: var(--color);
+    color: var(--font);
 }
 .roundedButton.github {
     transition: .5s;
     border-color: #6640c0;
     background: radial-gradient(circle,#6e5494 0,#4078c0 100%)!important;
-    color: var(--color);
+    color: var(--font);
 }
 .roundedButton.github:hover {
     background: radial-gradient(circle,#4078c0 0,#6e5494 100%)!important;
-    color: var(--color);
+    color: var(--font);
 }
 .content {
     text-align: center;
 }
-.dbtn {
-    background: #7289DA;
-    padding: 0 20px;
-    line-height: 35px;
-    color: #fff;
-    font-family: 'Helvetica', 'Arial', sans-sefir;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 3px;
+.center {
+    text-align: center;
+}
+.roundedButton.dbtn {
+    border-radius: 3px !important;
+    transition: .5s;
+    border-color: var(--dbtn-color);
+    background: var(--dbtn-color) !important;
+    color: var(--font);
+}
+.roundedButton.dbtn:hover {
+    background: radial-gradient(circle,var(--dbtn-color) 0,var(--bg-1) 100%)!important;
+    color: var(--font);
 }
 .container {
     display: flex;
