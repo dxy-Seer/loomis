@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
         Embed.setURL(config.siteUrl)
         Embed.addFields(
             { name: '**Bot Version**', value: `${config.bot.ver}`, inline: true },
-            { name: '**Template Version**', value: `${pack.version} - Author: ${pack.author}`, inline: true }, // Do *not* remove the author otherwise the licence will be broken and copyright issues will be in place!
+            { name: '**Template Version**', value: `${pack.version} - Author: [${pack.author}](${pack.homepage})`, inline: true }, // Do *not* remove the author otherwise the licence will be broken and copyright issues will be in place!
         )
     message.channel.send(Embed);
 }
