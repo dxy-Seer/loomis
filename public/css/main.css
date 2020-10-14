@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     font-family: Whitney-Semibold Regular,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: white;
-} /*https://github.com/dxy-Seer/dbot-template*/
+} 
 h1 {
     margin: 10px 0;
     font-size: 56px !important;
@@ -25,11 +25,11 @@ a {
     background: radial-gradient(circle,var(--bg-2) 0,var(--bg-1) 100%)!important;
 }
 .title img.alive{
-    background-color: #ff0000;
-    -webkit-box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
-    -moz-box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
-    -o-box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
-    box-shadow: inset 0px 0px 6px -1px hsla(0, 80%, 40%, 1);
+    background-color: var(--primary);
+    -webkit-box-shadow: inset 0px 0px 6px -1px var(--primary);
+    -moz-box-shadow: inset 0px 0px 6px -1px var(--primary);
+    -o-box-shadow: inset 0px 0px 6px -1px var(--primary);
+    box-shadow: inset 0px 0px 6px -1px var(--primary);
     opacity: 1;
     -webkit-animation: header_NotificationCircle_ANIM 1.0s infinite ease-in-out;
     -moz-animation: header_NotificationCircle_ANIM 1.0s infinite ease-in-out;
@@ -124,7 +124,7 @@ a {
   }
   @-webkit-keyframes header_NotificationCircle_ANIM {
     0% {
-      -webkit-box-shadow: 0 0 0 0 hsla(0, 80%, 40%, 0.8);
+      -webkit-box-shadow: 0 0 0 0 var(--primary);
     }
     70% {
         -webkit-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
@@ -135,8 +135,8 @@ a {
   }
   @keyframes header_NotificationCircle_ANIM {
     0% {
-      -moz-box-shadow: 0 0 0 0 #49a1ff;
-      box-shadow: 0 0 0 0 #49a1ff;
+      -moz-box-shadow: 0 0 0 0 var(--primary);
+      box-shadow: 0 0 0 0 var(--primary);
     }
     70% {
         -moz-box-shadow: 0 0 0 10px hsla(0, 80%, 40%, 0);
@@ -226,12 +226,11 @@ a {
 }
 .roundedButton.github {
     transition: .5s;
-    border-color: #6640c0;
-    background: radial-gradient(circle,#6e5494 0,#4078c0 100%)!important;
+    background: radial-gradient(circle,var(--bg-1) 0,var(--bg-2) 100%)!important;
     color: var(--font);
 }
 .roundedButton.github:hover {
-    background: radial-gradient(circle,#4078c0 0,#6e5494 100%)!important;
+    background: radial-gradient(circle,var(--bg-2) 0,var(--bg-1) 100%)!important;
     color: var(--font);
 }
 .content {
