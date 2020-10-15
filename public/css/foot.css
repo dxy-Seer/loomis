@@ -1,7 +1,7 @@
 .footer #button{
 	width:35px;
 	height:35px;
-	border: #727172 12px solid;
+	border: var(--primary) 12px solid;
 	border-radius:35px;
 	margin:0 auto;
 	position:relative;
@@ -14,7 +14,7 @@
 .footer #button:hover{
 	width:35px;
 	height:35px;
-	border: #3A3A3A 12px solid;
+	filter: brightness(75%);
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -52,7 +52,7 @@ height:100%;
   position:relative;
   top:0;
   left:0;
-	background: radial-gradient(circle,var(--bg-1) 0,var(--bg-2) 100%)!important;
+	background: radial-gradient(circle,var(--tretraty) 0,var(--accent) 100%)!important;
 }
 .footer #cont{
   position:relative;
