@@ -248,7 +248,7 @@ a {
     color: var(--font);
 }
 .roundedButton.dbtn:hover {
-    background: radial-gradient(circle,var(--dbtn-color) 0,var(--bg-1) 100%)!important;
+    filter: brightness(75%);
     color: var(--font);
 }
 .container {
