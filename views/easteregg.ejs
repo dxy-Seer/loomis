@@ -7,22 +7,38 @@
   <link rel="stylesheet" href="/css/root.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/foot.css">
+  <link rel="stylesheet" href="/css/waves.css">
   <link rel="shortcut icon" href="https://github.com/dxy-Seer/dbos/blob/main/public/img/logo.PNG?raw=true" type="image/x-icon">
 </head>
 <body>
-  <div class="title">
-    <br>
-    <br>
-    <img class="alive" src="https://github.com/dxy-Seer/dbos/blob/main/public/img/logo.PNG?raw=true">
-    <h1>Wow!</h1>
-    <h3>You found an easter egg.</h3>
+  <div class="header">
+    <div class="inner-header">
+      <div class="title">
+        <br>
+        <br>
+        <img class="api" src="https://github.com/wezacon/dbos/blob/main/public/img/Wezacon-icon.png?raw=true">
+        <h1>Wezacon - EasterEgg</h1>
+        <h3>You found the page about the devs, just kidding, it is here: <a href="/wzc/team">WZC/TEAM</a>!</h3>
+      </div>
+      <div class="center">
+      </div>
+    </div>
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="var(--bg-2)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--bg-1)" />
+            </g>
+        </svg>
+    </div>
   </div>
-  <div class="center">
-      <br>
-  <br>
-  <br>
-  <br>
-  <a href="/" class="roundedButton dbtn" style="margin: 10px;">Home</a>
+  <div class="wcontent">
+    <br>
+    <br>
+    <p></p>
   </div>
   <div class="footer">
     <div id="button"></div>
@@ -33,7 +49,6 @@
       </div>
       </div>
   </div>
-</div>
-</body>
-</html>
-
+  </div>
+  </body>
+  </html>

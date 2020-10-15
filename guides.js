@@ -11,6 +11,7 @@ router.get("/", function(request, response) {
     SiteName: Config.siteName
   });
 });
+
 router.get("/invite", function(request, response) {
   response.redirect("https://discordapp.com/api/oauth2/authorize?client_id="+Config.bot.id +"&permissions=8&scope=bot", {
     SiteName: Config.siteName

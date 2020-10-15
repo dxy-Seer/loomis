@@ -52,7 +52,7 @@ height:100%;
   position:relative;
   top:0;
   left:0;
-	background: radial-gradient(circle,var(--tretraty) 0,var(--accent) 100%)!important;
+	background: radial-gradient(circle,var(--bg-1) 0,var(--accent) 100%)!important;
 }
 .footer #cont{
   position:relative;
