@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
                 { name: '**Admin**', value: `${prefix}setprefix\n${prefix}kick\n${prefix}clear`, inline: true },
             )
             .setTimestamp()
-            .setFooter('DBOS - The simple yet powerful open source bot!', 'https://github.com/dxy-Seer/dbos/blob/main/public/img/logo.PNG?raw=true');
+            .setFooter('© Wezacon.com', 'https://github.com/wezacon/dbos/blob/main/public/img/Wezacon-icon.png?raw=true');
  
     message.channel.send(helpEmbed);
 }
