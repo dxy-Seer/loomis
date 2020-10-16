@@ -1,9 +1,4 @@
-  ____  ____   ___  ____  
- |  _ \| __ ) / _ \/ ___| 
- | | | |  _ \| | | \___ \ 
- | |_| | |_) | |_| |___) |
- |____/|____/ \___/|____/ 
-                          
+# DBOS               
 ### How to setup
 Rename config.json.example > config.json
 Then fill in these values:
