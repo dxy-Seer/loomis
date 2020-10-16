@@ -31,6 +31,14 @@
     text-align: center;
     background-color: var(--bg-1);
   }
+  .wcontent a i{
+    font-size: 40px;
+    color: var(--dbtn-color);
+    transition: .5s;
+  }
+  .wcontent a i:hover {
+    filter: brightness(120%);
+  }
   .parallax>use {
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
   }
