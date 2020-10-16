@@ -183,7 +183,7 @@ a {
   }  */
   
 /* Buttons */
-.roundedButton {
+.btn_main {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 25px;
@@ -201,42 +201,42 @@ a {
     text-decoration: none;
     opacity: 1;
 }
-.roundedButton > img,
-.roundedButton > svg {
+.btn_main > img,
+.btn_main > svg {
     width: 1em;
     height: 1em;
     object-fit: contain;
     margin-right: 10px;
     transform: scale(1.25);
 }
-.roundedButton.bold {
+.btn_main.bold {
     font-weight: 700;
 }
-.roundedButton.big {
+.btn_main.big {
     font-size: 1.15em;
 }
-.roundedButton.caps {
+.btn_main.caps {
     text-transform: uppercase;
 }
-.roundedButton:hover {
+.btn_main:hover {
     color: #fff;
 }
-.roundedButton.accentColor1 {
+.btn_main.accentColor1 {
     border-color: var(--accent);
     background-color: var(--accent);
     color: var(--font);
 }
-.roundedButton.accentColor1:hover {
+.btn_main.accentColor1:hover {
     filter: brightness(130%);
     color: var(--font);
 }
-.roundedButton.github {
+.btn_main.github {
     border-color: var(--bg-2);
     transition: .5s;
     background: radial-gradient(circle,var(--bg-1) 0,var(--bg-2) 100%)!important;
     color: var(--font);
 }
-.roundedButton.github:hover {
+.btn_main.github:hover {
   filter: brightness(130%);
     color: var(--font);
 }
@@ -246,14 +246,14 @@ a {
 .center {
     text-align: center;
 }
-.roundedButton.dbtn {
+.btn_main.dbtn {
     border-radius: 3px !important;
     transition: .5s;
     border-color: var(--dbtn-color);
     background: var(--dbtn-color) !important;
     color: var(--font);
 }
-.roundedButton.dbtn:hover {
+.btn_main.dbtn:hover {
     filter: brightness(130%);
     color: var(--font);
 }
