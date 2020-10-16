@@ -22,11 +22,6 @@ router.get("/easter", function(request, response){
     SiteName: Config.siteName
   });
 });
-router.get("/wzc/team", function(request, response){
-  response.render(__dirname + "/views/wzc/team.ejs", {
-    SiteName: Config.siteName
-  });
-});
 // if 404
 router.get("*", function(request, response) {
   response.render(__dirname + "/views/errors/404.ejs", {
