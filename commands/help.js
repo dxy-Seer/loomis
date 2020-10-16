@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
             .setThumbnail('https://github.com/dxy-Seer/dbos/blob/main/public/img/logo.PNG?raw=true')
             .addFields(
                 { name: '**Fun**', value: `${prefix}ping\n${prefix}prefix\n${prefix}server`, inline: true },
-                { name: '**Admin**', value: `${prefix}setprefix\n${prefix}resetprefixn${prefix}kick\n${prefix}clear`, inline: true },
+                { name: '**Admin**', value: `${prefix}setprefix\n${prefix}resetprefix\n${prefix}kick\n${prefix}clear`, inline: true },
             )
             .setTimestamp()
             .setFooter('© Wezacon.com', 'https://github.com/wezacon/dbos/blob/main/public/img/Wezacon-icon.png?raw=true');
