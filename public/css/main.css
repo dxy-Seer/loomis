@@ -227,7 +227,7 @@ a {
     color: var(--font);
 }
 .roundedButton.accentColor1:hover {
-    filter: brightness(75%);
+    filter: brightness(130%);
     color: var(--font);
 }
 .roundedButton.github {
@@ -254,7 +254,7 @@ a {
     color: var(--font);
 }
 .roundedButton.dbtn:hover {
-    filter: brightness(75%);
+    filter: brightness(130%);
     color: var(--font);
 }
 .container {
