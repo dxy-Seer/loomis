@@ -1,6 +1,6 @@
 {
   "name": "dbos",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The powerful open source discord bot!",
   "main": "server.js",
   "engines": {
