@@ -1,31 +1,32 @@
 const express = require("express");
 const router = express.Router();
 const discordBot = require("./bot");
-const Config = require('./config.json');
+const config = require('./config.json');
 const app = express();
 app.set('view engine', 'ejs');
+const UserMod = require('./models/User')
 
 
 router.get("/", function(request, response) {
   response.render(__dirname + "/views/index.ejs", {
-    SiteName: Config.siteName
+    SiteName: config.siteName
   });
 });
 
 router.get("/invite", function(request, response) {
-  response.redirect("https://discordapp.com/api/oauth2/authorize?client_id="+Config.bot.id +"&permissions=8&scope=bot", {
-    SiteName: Config.siteName
+  response.redirect("https://discordapp.com/api/oauth2/authorize?client_id="+config.bot.id +"&permissions=8&scope=bot", {
+    SiteName: config.siteName
   });
 });
 router.get("/easter", function(request, response){
   response.render(__dirname + "/views/easteregg.ejs", {
-    SiteName: Config.siteName
+    SiteName: config.siteName
   });
 });
 // if 404
 router.get("*", function(request, response) {
   response.render(__dirname + "/views/errors/404.ejs", {
-    SiteName: Config.siteName
+    SiteName: config.siteName
   });
 });
             
