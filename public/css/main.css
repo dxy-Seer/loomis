@@ -21,6 +21,22 @@ a {
     text-decoration: none;
     color: var(--primary);
 } 
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  -o-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
 .title {
     text-align: center;
 }
