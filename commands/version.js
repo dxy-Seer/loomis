@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 const config = require('../config.json');
 const color = require('../colors.json');
 const pack = require('../package.json');
-
 module.exports.run = async (bot, message, args) => {
     const Embed = new Discord.MessageEmbed();
         Embed.setColor(color.info);
