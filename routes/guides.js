@@ -8,7 +8,7 @@ const UserMod = require('../models/User')
 
 
 router.get("/", function(request, response) {
-  response.render(__dirname + "/views/index.ejs", {
+  response.render("../views/index.ejs", {
     SiteName: config.siteName
   });
 });
@@ -19,13 +19,13 @@ router.get("/invite", function(request, response) {
   });
 });
 router.get("/easter", function(request, response){
-  response.render(__dirname + "/views/easteregg.ejs", {
+  response.render("../views/easteregg.ejs", {
     SiteName: config.siteName
   });
 });
 // if 404
 router.get("*", function(request, response) {
-  response.render(__dirname + "/views/errors/404.ejs", {
+  response.render("../views/errors/404.ejs", {
     SiteName: config.siteName
   });
 });
