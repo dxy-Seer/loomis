@@ -20,9 +20,10 @@ h1 {
 a {
     text-decoration: none;
     color: var(--primary);
+    transition: .5s;
 } 
 a:hover {
-  filter: brightness(110%);
+  filter: brightness(130%);
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-1) !important;
