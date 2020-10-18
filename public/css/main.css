@@ -22,11 +22,11 @@ a {
     color: var(--primary);
 } 
 ::-webkit-scrollbar-track {
-  background: var(--background-color);
+  background: var(--bg-1) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: var(--primary)!important;
   border-radius: 5px;
   -webkit-transition: color .25s ease-in-out;
   -moz-transition: color .25s ease-in-out;
@@ -35,7 +35,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-dark);
+  background: var(--primary-dark)!important;
 }
 .title {
     text-align: center;
