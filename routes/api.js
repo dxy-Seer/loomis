@@ -68,7 +68,7 @@ router.get('/api/all/info', async function(req, res){
   let port = Config.port;
   let authURL = domain + '/inv/bot';
 
-  res.render(__dirname + "/views/api/info.ejs", {
+  res.render("../views/api/info.ejs", {
     SiteName: Config.siteName,
     invite: authURL,
     domain: domain,
