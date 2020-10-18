@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const discordBot = require("./bot");
-const Config = require('./config.json');
+const Config = require('../config.json');
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 router.get("/api/domain", function(request, response) {

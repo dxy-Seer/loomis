@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const discordBot = require("./bot");
-const Config = require('./config.json');
+const discordBot = require("../bot");
+const Config = require('../config.json');
 
 
 // No errors yet lol

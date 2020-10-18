@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const discordBot = require("./bot");
-const config = require('./config.json');
+const discordBot = require("../bot");
+const config = require('../config.json');
 const app = express();
 app.set('view engine', 'ejs');
-const UserMod = require('./models/User')
+const UserMod = require('../models/User')
 
 
 router.get("/", function(request, response) {

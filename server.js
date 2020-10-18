@@ -29,10 +29,10 @@ if(config.server.invite == ''){
     ),
   4 * 60 * 1000
 );
-app.use(require("./err.js"));
-app.use(require("./api.js"));
-app.use(require("./api.oauth.js"));
-app.use(require("./guides"));
+app.use(require("./routes/err.js"));
+app.use(require("./routes/api.js"));
+app.use(require("./routes/api.oauth.js"));
+app.use(require("./routes/guides"));
 const listener = app.listen(varPORT, function() {
   console.log("Site online on the address: " + config.siteUrl + ":" + varPORT + "\n-------------------------");
 });
