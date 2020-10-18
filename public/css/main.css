@@ -21,6 +21,9 @@ a {
     text-decoration: none;
     color: var(--primary);
 } 
+a:hover {
+  filter: brightness(110%);
+}
 ::-webkit-scrollbar-track {
   background: var(--bg-1) !important;
 }
